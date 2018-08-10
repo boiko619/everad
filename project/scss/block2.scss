@@ -1,0 +1,194 @@
+.block2{
+    grid-area: block2;
+    display: grid;
+    grid-template-areas: "block2_top"
+    "block2_wrop";
+    margin-top: 40px;
+    background-image: url("/images/bgblock2.png");
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    
+}
+.block2_top{
+    grid-area: block2_top;
+    display: grid;
+    grid-template-areas: "block2_title"
+    "block2_top_text";
+    margin-bottom: 30px;
+}
+.block2_title{
+    padding-top: 30px;
+    grid-area: block2_title;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    word-spacing: 3px;
+}
+
+.block2_top_text{
+    grid-area: block2_top_text;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    word-spacing: 7px;
+    text-align: center;
+    
+}
+.block2_wrop{
+    grid-area: block2_wrop;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.block2_wrop_body{
+    border-radius: 10px;
+    grid-template-rows: 60px 200px;
+    grid-template-columns: minmax(650px, 1fr);
+
+    background: white;
+    display: grid;
+    grid-template-areas: "block2_wrop_title"
+    "block2_wrop_buttons";
+
+}
+.block2_wrop_title{
+    grid-area: block2_wrop_title;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.block2_wrop_num{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #e5e5e5;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.block2_wrop_text{
+    font-size: 24px;
+    color: black;
+}
+.block2_wrop_buttons{
+    grid-area: block2_wrop_buttons;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.left_button{
+    margin-right: 20px;
+}
+.block2_button{
+    width: 250px;
+    height: 80px;
+    background: #fc481a;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: "block2_button_top"
+    "block2_button_text";
+    grid-template-rows: 1fr 1fr;
+    //justify-content: center;
+}
+
+.block2_button_top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:   125px 10px;
+    border-bottom-left-radius: 125px 10px ;
+    background: #fc5c33;
+    grid-area: block2_button_top;
+    width: 250px;
+
+
+
+
+}
+.block2_button_text{
+    grid-area: block2_button_text;
+    position: relative;
+    font-size: 24px;
+    top: -12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.red{
+    margin: 0 5px;
+    color: #fc481a;
+}
+@media screen and (max-width:810px){
+    .block2_button{justify-content: center;
+    }
+    .block2_wrop_buttons{
+    display: grid;
+    grid-template-areas: "left_button"
+    "right_button";}
+
+    .block2_wrop_body{
+        justify-content: center;
+    }
+    .right_button{
+        grid-area: right_button;
+    }
+    .left_button{
+        grid-area: left_button;
+    }
+}
+@media screen and (max-width:800px){
+    .block2{
+        grid-area: block2;
+        display: grid;
+        grid-template-areas: "block2_top"
+        "block2_wrop";
+        margin-top: 40px;
+        background-image: url("/images/bgblock2.png");
+        background-position: center;
+        background-size: cover;
+        color: white;
+        grid-template-columns: 1fr;
+        grid-template-columns: minmax(350px, 1fr);
+
+    }
+    .block2_wrop_body{
+        border-radius: 10px;
+        grid-template-rows: 1fr;
+        grid-template-columns: minmax(300px, 1fr);
+        padding: 30px;
+        margin: 0;
+        background: white;
+        display: grid;
+        grid-template-areas: "block2_wrop_title"
+        "block2_wrop_buttons";
+    
+    }
+    .block2_button{
+        margin-bottom: 15px;
+    }
+    .block2_title{
+        padding-top: 30px;
+        grid-area: block2_title;
+        word-spacing: 5px;
+        font-size: 38px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+
+}
